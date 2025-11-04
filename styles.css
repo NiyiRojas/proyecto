@@ -1,0 +1,30 @@
+:root{
+  --bg:#fbfbfb;
+  --card:#ffffff;
+  --accent:#6b8e8e;
+  --text:#222;
+  --muted:#666;
+  font-family:"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:16px}
+.site-header{background:linear-gradient(90deg,#ffffffee,#f7f7f7);box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;padding:10px 0;font-size:1.4rem;color:var(--accent)}
+.nav a{margin-left:12px;text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+.hero{position:relative;border-radius:8px;overflow:hidden;margin:18px 0;display:flex;align-items:center}
+.hero img{width:40%;object-fit:cover}
+.hero-text{padding:20px}
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.post-card{background:var(--card);border-radius:8px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.post-card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.post-card h3{margin:10px 0}
+.post-page .post{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.post-page img{width:100%;border-radius:6px;margin:12px 0}
+.meta{color:var(--muted);font-size:0.9rem}
+@media(max-width:600px){
+  .hero{flex-direction:column}
+  .hero img{width:100%;height:180px}
+}
